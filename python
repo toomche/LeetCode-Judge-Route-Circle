@@ -1,0 +1,16 @@
+class Solution(object):
+    def judgeCircle(self, moves):
+        """
+        :type moves: str
+        :rtype: bool
+        """
+        x=list(moves)
+        uu=x.count('U')
+        dd=x.count('D')
+        rr=x.count('R')
+        ll=x.count('L')
+        if uu==dd:
+            if rr==ll:
+                return bool(1)
+            return bool(0)
+        return bool(0)
